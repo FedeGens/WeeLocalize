@@ -1,0 +1,22 @@
+{
+	"title": {
+		"it" : "Titolo della pagina",
+        "en" : "Page's title",
+        "default" : "Default page's title"
+	},
+    "button": {
+        "it" : "Bottone",
+        "en" : "Button",
+        "default" : "default"
+    },
+    "change_language": {
+        "it" : "Cambia lingua",
+        "en" : "Change language",
+        "default" : "default change"
+    },
+    "test": {
+        "it" : "prova",
+        "en" : "test",
+        "default" : "default"
+    }
+}

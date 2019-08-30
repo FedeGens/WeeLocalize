@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3045A62822777EC700A0D06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A62722777EC700A0D06D /* AppDelegate.swift */; };
+		3045A62A22777EC700A0D06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A62922777EC700A0D06D /* ViewController.swift */; };
+		3045A62D22777EC700A0D06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045A62B22777EC700A0D06D /* Main.storyboard */; };
+		3045A62F22777EC800A0D06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3045A62E22777EC800A0D06D /* Assets.xcassets */; };
+		3045A63222777EC800A0D06D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045A63022777EC800A0D06D /* LaunchScreen.storyboard */; };
+		3045A63C22777F4C00A0D06D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A63B22777F4C00A0D06D /* Localizable.swift */; };
+		3045A63F22777FDF00A0D06D /* LocalizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A63E22777FDF00A0D06D /* LocalizableLabel.swift */; };
+		3045A641227781F800A0D06D /* WeeLocalizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A640227781F800A0D06D /* WeeLocalizeManager.swift */; };
+		3045A6432277846C00A0D06D /* localize.json in Resources */ = {isa = PBXBuildFile; fileRef = 3045A6422277846C00A0D06D /* localize.json */; };
+		3045A645227786CF00A0D06D /* WeeLocalizeLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A644227786CF00A0D06D /* WeeLocalizeLanguageManager.swift */; };
+		3045A6472277966500A0D06D /* LocalizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A6462277966500A0D06D /* LocalizableButton.swift */; };
+		3045A649227796A700A0D06D /* UIView+WeeLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */; };
+		3045A64B2277A20F00A0D06D /* LocalizableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */; };
+		3045A64D2277A30200A0D06D /* UIViewController+WeeLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A64C2277A30200A0D06D /* UIViewController+WeeLocalize.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3045A62422777EC700A0D06D /* WeeLocalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeLocalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3045A62722777EC700A0D06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3045A62922777EC700A0D06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3045A62C22777EC700A0D06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3045A62E22777EC800A0D06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3045A63122777EC800A0D06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3045A63322777EC800A0D06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3045A63B22777F4C00A0D06D /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		3045A63E22777FDF00A0D06D /* LocalizableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableLabel.swift; sourceTree = "<group>"; };
+		3045A640227781F800A0D06D /* WeeLocalizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeLocalizeManager.swift; sourceTree = "<group>"; };
+		3045A6422277846C00A0D06D /* localize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localize.json; sourceTree = "<group>"; };
+		3045A644227786CF00A0D06D /* WeeLocalizeLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeLocalizeLanguageManager.swift; sourceTree = "<group>"; };
+		3045A6462277966500A0D06D /* LocalizableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableButton.swift; sourceTree = "<group>"; };
+		3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WeeLocalize.swift"; sourceTree = "<group>"; };
+		3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableTextView.swift; sourceTree = "<group>"; };
+		3045A64C2277A30200A0D06D /* UIViewController+WeeLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+WeeLocalize.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3045A62122777EC700A0D06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3045A61B22777EC700A0D06D = {
+			isa = PBXGroup;
+			children = (
+				3045A62622777EC700A0D06D /* WeeLocalize */,
+				3045A62522777EC700A0D06D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3045A62522777EC700A0D06D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3045A62422777EC700A0D06D /* WeeLocalize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3045A62622777EC700A0D06D /* WeeLocalize */ = {
+			isa = PBXGroup;
+			children = (
+				3045A6422277846C00A0D06D /* localize.json */,
+				3045A62722777EC700A0D06D /* AppDelegate.swift */,
+				3045A62922777EC700A0D06D /* ViewController.swift */,
+				3045A62B22777EC700A0D06D /* Main.storyboard */,
+				3045A62E22777EC800A0D06D /* Assets.xcassets */,
+				3045A63022777EC800A0D06D /* LaunchScreen.storyboard */,
+				3045A63322777EC800A0D06D /* Info.plist */,
+				3045A63D22777FB900A0D06D /* Localizable */,
+			);
+			path = WeeLocalize;
+			sourceTree = "<group>";
+		};
+		3045A63D22777FB900A0D06D /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				3045A63B22777F4C00A0D06D /* Localizable.swift */,
+				3045A63E22777FDF00A0D06D /* LocalizableLabel.swift */,
+				3045A6462277966500A0D06D /* LocalizableButton.swift */,
+				3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */,
+				3045A640227781F800A0D06D /* WeeLocalizeManager.swift */,
+				3045A644227786CF00A0D06D /* WeeLocalizeLanguageManager.swift */,
+				3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */,
+				3045A64C2277A30200A0D06D /* UIViewController+WeeLocalize.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3045A62322777EC700A0D06D /* WeeLocalize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3045A63622777EC800A0D06D /* Build configuration list for PBXNativeTarget "WeeLocalize" */;
+			buildPhases = (
+				3045A62022777EC700A0D06D /* Sources */,
+				3045A62122777EC700A0D06D /* Frameworks */,
+				3045A62222777EC700A0D06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeeLocalize;
+			productName = WeeTranslate;
+			productReference = 3045A62422777EC700A0D06D /* WeeLocalize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3045A61C22777EC700A0D06D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = gens;
+				TargetAttributes = {
+					3045A62322777EC700A0D06D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3045A61F22777EC700A0D06D /* Build configuration list for PBXProject "WeeLocalize" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3045A61B22777EC700A0D06D;
+			productRefGroup = 3045A62522777EC700A0D06D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3045A62322777EC700A0D06D /* WeeLocalize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3045A62222777EC700A0D06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3045A6432277846C00A0D06D /* localize.json in Resources */,
+				3045A63222777EC800A0D06D /* LaunchScreen.storyboard in Resources */,
+				3045A62F22777EC800A0D06D /* Assets.xcassets in Resources */,
+				3045A62D22777EC700A0D06D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3045A62022777EC700A0D06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3045A641227781F800A0D06D /* WeeLocalizeManager.swift in Sources */,
+				3045A64D2277A30200A0D06D /* UIViewController+WeeLocalize.swift in Sources */,
+				3045A63C22777F4C00A0D06D /* Localizable.swift in Sources */,
+				3045A64B2277A20F00A0D06D /* LocalizableTextView.swift in Sources */,
+				3045A62A22777EC700A0D06D /* ViewController.swift in Sources */,
+				3045A649227796A700A0D06D /* UIView+WeeLocalize.swift in Sources */,
+				3045A6472277966500A0D06D /* LocalizableButton.swift in Sources */,
+				3045A645227786CF00A0D06D /* WeeLocalizeLanguageManager.swift in Sources */,
+				3045A62822777EC700A0D06D /* AppDelegate.swift in Sources */,
+				3045A63F22777FDF00A0D06D /* LocalizableLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3045A62B22777EC700A0D06D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3045A62C22777EC700A0D06D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3045A63022777EC800A0D06D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3045A63122777EC800A0D06D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3045A63422777EC800A0D06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3045A63522777EC800A0D06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3045A63722777EC800A0D06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8UVDSE8R7;
+				INFOPLIST_FILE = "$(SRCROOT)/WeeLocalize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gens.WeeTranslate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3045A63822777EC800A0D06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8UVDSE8R7;
+				INFOPLIST_FILE = "$(SRCROOT)/WeeLocalize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gens.WeeTranslate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3045A61F22777EC700A0D06D /* Build configuration list for PBXProject "WeeLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3045A63422777EC800A0D06D /* Debug */,
+				3045A63522777EC800A0D06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3045A63622777EC800A0D06D /* Build configuration list for PBXNativeTarget "WeeLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3045A63722777EC800A0D06D /* Debug */,
+				3045A63822777EC800A0D06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3045A61C22777EC700A0D06D /* Project object */;
+}

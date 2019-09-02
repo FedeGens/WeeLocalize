@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocalizableLabel: UILabel, Localizable {    
+open class LocalizableLabel: UILabel, Localizable {    
     //MARK: Localizable Protocol
     @IBInspectable var localizableIdentifier: String = "" {
         didSet { reload() }

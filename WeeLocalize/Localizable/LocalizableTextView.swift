@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocalizableTextVIew: UITextView, Localizable {
+open class LocalizableTextVIew: UITextView, Localizable {
     //MARK: Localizable Protocol
     @IBInspectable var localizableIdentifier: String = "" {
         didSet { reload() }

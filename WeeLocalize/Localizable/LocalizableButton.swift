@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocalizableButton: UIButton, Localizable {
+open class LocalizableButton: UIButton, Localizable {
     //MARK: Localizable Protocol
     @IBInspectable var localizableIdentifier: String = "" {
         didSet { reload() }

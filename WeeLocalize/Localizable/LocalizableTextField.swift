@@ -19,6 +19,9 @@ open class LocalizableTextField: UITextField, Localizable {
     }
     
     func setString(fromIdentifier key: String, language: String? = nil) {
+        guard localizableIdentifier != "" else {
+            return
+        }
         self.placeholder = WeeLocalizeManager.shared.getString(fromIdentifier: key, language: language)
     }
 }

@@ -19,6 +19,9 @@ open class LocalizableButton: UIButton, Localizable {
     }
     
     func setString(fromIdentifier: String, language: String? = nil) {
+        guard localizableIdentifier != "" else {
+            return
+        }
         self.setTitle(WeeLocalizeManager.shared.getString(fromIdentifier: localizableIdentifier, language: language), for: .normal)
     }
 }

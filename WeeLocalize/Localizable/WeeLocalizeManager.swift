@@ -8,13 +8,13 @@
 
 import Foundation
 
+typealias LocalizeSource = [String: [String:String]]
+
 class WeeLocalizeManager {
-    typealias LocalizeSource = [String: [String:String]]
-    
     static let shared = WeeLocalizeManager()
     
     private var localizeSource: LocalizeSource = [:]
-    private var oldLang: String? = nil
+    private var localizeSettings: LocalizeSettings = LocalizeSettings(default_language: "")
     
     var localizationFileName: String = "localize" {
         didSet {
@@ -23,34 +23,33 @@ class WeeLocalizeManager {
     }
     
     var getStringHandler: (String, String?) -> String = { key, language in
-        guard key != "" else {
-            return ""
-        }
-        
-        let lang = language ?? WeeLocalizeLanguageManager.shared.currentLanguage
-        
-        guard let source = WeeLocalizeManager.shared.localizeSource[key] else {
-            print("[ WEELOCALIZE ⚠️ WARNING ] - No string found for key: \"\(key)\"")
-            return key
-        }
-        
-        guard let str = source[lang] else {
-            if lang.contains("-") {
-                WeeLocalizeManager.shared.oldLang = lang
-                let correctedLang = lang.components(separatedBy: "-")[0]
-                return WeeLocalizeManager.shared.getString(fromIdentifier: key, language: correctedLang)
+        func processGetString(key: String, language: String?, oldLanguage oldLang: String? = nil) -> String {
+            guard key != "" else { return "" }
+            
+            let lang = language ?? WeeLocalizeLanguageManager.shared.currentLanguage
+            
+            guard let source = WeeLocalizeManager.shared.localizeSource[key] else {
+                print("[ WEELOCALIZE ⚠️ WARNING ] - No string found for key: \"\(key)\"")
+                return key
             }
-            print("[ WEELOCALIZE ⚠️ WARNING ] - No string found for key: \"\(key)\" and language \"\(WeeLocalizeManager.shared.oldLang ?? lang)\"")
-            WeeLocalizeManager.shared.oldLang = nil
-            guard language == "default" else {
-                return WeeLocalizeManager.shared.getString(fromIdentifier: key, language: "default")
+            
+            guard let str = source[lang] else {
+                if lang.contains("-") {
+                    let correctedLang = lang.components(separatedBy: "-")[0]
+                    return processGetString(key: key, language: correctedLang, oldLanguage: lang)
+                }
+                print("[ WEELOCALIZE ⚠️ WARNING ] - No string found for key: \"\(key)\" and language \"\(oldLang ?? lang)\"")
+                guard language == WeeLocalizeManager.shared.localizeSettings.default_language ||
+                    oldLang == WeeLocalizeManager.shared.localizeSettings.default_language else {
+                        return processGetString(key: key, language: WeeLocalizeManager.shared.localizeSettings.default_language)
+                }
+                return key
             }
-            return key
+            
+            return str
         }
         
-        WeeLocalizeManager.shared.oldLang = nil
-        
-        return str
+        return processGetString(key: key, language: language)
     }
     
     init() {
@@ -60,14 +59,24 @@ class WeeLocalizeManager {
     func loadLocalizationFile(str: String) {
         guard let path = Bundle.main.url(forResource: str, withExtension: "json"),
             let data = try? Data(contentsOf: path),
-            let object = try? JSONSerialization.jsonObject(with: data, options: []) as? LocalizeSource else {
+            let jsonContent = try? JSONDecoder().decode(LocalizeJSONContent.self, from: data) else {
                 return
         }
         
-        localizeSource = object
+        localizeSource = jsonContent.strings
+        localizeSettings = jsonContent.settings
     }
     
     func getString(fromIdentifier key: String, language: String? = nil) -> String {
         return getStringHandler(key, language)
     }
+}
+
+struct LocalizeSettings: Codable {
+    var default_language: String
+}
+
+struct LocalizeJSONContent: Codable {
+    let settings: LocalizeSettings
+    let strings: LocalizeSource
 }

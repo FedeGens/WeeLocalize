@@ -1,22 +1,23 @@
 {
-	"title": {
-		"it" : "Titolo della pagina",
-        "en" : "Page's title",
-        "default" : "Default page's title"
-	},
-    "button": {
-        "it" : "Bottone",
-        "en" : "Button",
-        "default" : "default"
+    "settings": {
+        "default_language": "en"
     },
-    "change_language": {
-        "it" : "Cambia lingua",
-        "en" : "Change language",
-        "default" : "default change"
-    },
-    "test": {
-        "it" : "prova",
-        "en" : "test",
-        "default" : "default"
+    "strings": {
+        "title": {
+            "it" : "Titolo della pagina",
+            "en" : "Page's title",
+        },
+        "button": {
+            "it" : "Bottone",
+            "en" : "Button",
+        },
+        "change_language": {
+            "it" : "Cambia lingua",
+            "en" : "Change language",
+        },
+        "test": {
+            "it" : "prova",
+            "en" : "test",
+        }
     }
 }

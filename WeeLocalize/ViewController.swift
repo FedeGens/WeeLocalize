@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBAction func changePressed(_ sender: Any) {
         WeeLocalizeLanguageManager.shared.set(currentLanguage: WeeLocalizeLanguageManager.shared.currentLanguage == "it" ? "asdasfsada" : "it")
+                
         self.reloadLocalization()
     }
 }

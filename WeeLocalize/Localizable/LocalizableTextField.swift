@@ -1,14 +1,14 @@
 //
-//  LocalizableTextView.swift
+//  LocalizableTextField.swift
 //  WeeLocalize
 //
-//  Created by Federico Gentile on 29/04/2019.
+//  Created by Federico Gentile on 03/09/2019.
 //  Copyright © 2019 gens. All rights reserved.
 //
 
 import UIKit
 
-open class LocalizableTextView: UITextView, Localizable {
+open class LocalizableTextField: UITextField, Localizable {
     //MARK: Localizable Protocol
     @IBInspectable var localizableIdentifier: String = "" {
         didSet { reload() }
@@ -19,6 +19,6 @@ open class LocalizableTextView: UITextView, Localizable {
     }
     
     func setString(fromIdentifier key: String, language: String? = nil) {
-        self.text = WeeLocalizeManager.shared.getString(fromIdentifier: key, language: language)
+        self.placeholder = WeeLocalizeManager.shared.getString(fromIdentifier: key, language: language)
     }
 }

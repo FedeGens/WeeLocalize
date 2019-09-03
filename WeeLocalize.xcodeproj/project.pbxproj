@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3036BE6A231E68B0002A2923 /* LocalizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036BE69231E68B0002A2923 /* LocalizableTextField.swift */; };
 		3045A62822777EC700A0D06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A62722777EC700A0D06D /* AppDelegate.swift */; };
 		3045A62A22777EC700A0D06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A62922777EC700A0D06D /* ViewController.swift */; };
 		3045A62D22777EC700A0D06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045A62B22777EC700A0D06D /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3036BE69231E68B0002A2923 /* LocalizableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableTextField.swift; sourceTree = "<group>"; };
 		3045A62422777EC700A0D06D /* WeeLocalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeLocalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3045A62722777EC700A0D06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3045A62922777EC700A0D06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				3045A63E22777FDF00A0D06D /* LocalizableLabel.swift */,
 				3045A6462277966500A0D06D /* LocalizableButton.swift */,
 				3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */,
+				3036BE69231E68B0002A2923 /* LocalizableTextField.swift */,
 				3045A640227781F800A0D06D /* WeeLocalizeManager.swift */,
 				3045A644227786CF00A0D06D /* WeeLocalizeLanguageManager.swift */,
 				3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */,
@@ -174,6 +177,7 @@
 				3045A641227781F800A0D06D /* WeeLocalizeManager.swift in Sources */,
 				3045A64D2277A30200A0D06D /* UIViewController+WeeLocalize.swift in Sources */,
 				3045A63C22777F4C00A0D06D /* Localizable.swift in Sources */,
+				3036BE6A231E68B0002A2923 /* LocalizableTextField.swift in Sources */,
 				3045A64B2277A20F00A0D06D /* LocalizableTextView.swift in Sources */,
 				3045A62A22777EC700A0D06D /* ViewController.swift in Sources */,
 				3045A649227796A700A0D06D /* UIView+WeeLocalize.swift in Sources */,

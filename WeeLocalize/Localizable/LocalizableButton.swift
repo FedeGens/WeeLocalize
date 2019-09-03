@@ -20,7 +20,6 @@ open class LocalizableButton: UIButton, Localizable {
     
     func setString(fromIdentifier: String, language: String? = nil) {
         self.setTitle(WeeLocalizeManager.shared.getString(fromIdentifier: localizableIdentifier, language: language), for: .normal)
-        
     }
 }
 

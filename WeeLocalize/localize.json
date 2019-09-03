@@ -1,6 +1,6 @@
 {
     "localize_settings": {
-        "default_language": "en"
+        "default_language": "en",
         "available_languages": [
             {
                 "key": "it",

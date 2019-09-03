@@ -22,4 +22,3 @@ open class LocalizableButton: UIButton, Localizable {
         self.setTitle(WeeLocalizeManager.shared.getString(fromIdentifier: localizableIdentifier, language: language), for: .normal)
     }
 }
-

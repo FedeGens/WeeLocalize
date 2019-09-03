@@ -1,11 +1,25 @@
 {
-    "settings": {
+    "localize_settings": {
         "default_language": "en"
+        "available_languages": [
+            {
+                "key": "it",
+                "value": "Italiano"
+            },
+            {
+                "en": "en",
+                "value": "English"
+            }
+        ]
     },
-    "strings": {
+    "localize_strings": {
         "title": {
             "it" : "Titolo della pagina",
             "en" : "Page's title",
+        },
+        "bottles": {
+            "it" : "Hai selezionato ($1) bottiglie",
+            "en" : "($1) bottles selected",
         },
         "button": {
             "it" : "Bottone",

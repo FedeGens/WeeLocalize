@@ -22,6 +22,7 @@
 		3045A649227796A700A0D06D /* UIView+WeeLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */; };
 		3045A64B2277A20F00A0D06D /* LocalizableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */; };
 		3045A64D2277A30200A0D06D /* UIViewController+WeeLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045A64C2277A30200A0D06D /* UIViewController+WeeLocalize.swift */; };
+		3051F08A231E7C17001B4A63 /* LocalizableStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051F089231E7C17001B4A63 /* LocalizableStructs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WeeLocalize.swift"; sourceTree = "<group>"; };
 		3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableTextView.swift; sourceTree = "<group>"; };
 		3045A64C2277A30200A0D06D /* UIViewController+WeeLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+WeeLocalize.swift"; sourceTree = "<group>"; };
+		3051F089231E7C17001B4A63 /* LocalizableStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStructs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				3045A6462277966500A0D06D /* LocalizableButton.swift */,
 				3045A64A2277A20F00A0D06D /* LocalizableTextView.swift */,
 				3036BE69231E68B0002A2923 /* LocalizableTextField.swift */,
+				3051F089231E7C17001B4A63 /* LocalizableStructs.swift */,
 				3045A640227781F800A0D06D /* WeeLocalizeManager.swift */,
 				3045A644227786CF00A0D06D /* WeeLocalizeLanguageManager.swift */,
 				3045A648227796A700A0D06D /* UIView+WeeLocalize.swift */,
@@ -179,6 +182,7 @@
 				3045A63C22777F4C00A0D06D /* Localizable.swift in Sources */,
 				3036BE6A231E68B0002A2923 /* LocalizableTextField.swift in Sources */,
 				3045A64B2277A20F00A0D06D /* LocalizableTextView.swift in Sources */,
+				3051F08A231E7C17001B4A63 /* LocalizableStructs.swift in Sources */,
 				3045A62A22777EC700A0D06D /* ViewController.swift in Sources */,
 				3045A649227796A700A0D06D /* UIView+WeeLocalize.swift in Sources */,
 				3045A6472277966500A0D06D /* LocalizableButton.swift in Sources */,

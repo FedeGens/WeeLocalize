@@ -14,7 +14,7 @@ class WeeLocalizeManager {
     static let shared = WeeLocalizeManager()
     
     private var localizeSource: LocalizeSource = [:]
-    private var localizeSettings: LocalizeSettings = LocalizeSettings(default_language: "")
+    private var localizeSettings: LocalizeSettings = LocalizeSettings(default_language: "", available_languages: [])
     
     var localizationFileName: String = "localize" {
         didSet {
@@ -63,20 +63,11 @@ class WeeLocalizeManager {
                 return
         }
         
-        localizeSource = jsonContent.strings
-        localizeSettings = jsonContent.settings
+        localizeSource = jsonContent.localize_strings
+        localizeSettings = jsonContent.localize_settings
     }
     
     func getString(fromIdentifier key: String, language: String? = nil) -> String {
         return getStringHandler(key, language)
     }
-}
-
-struct LocalizeSettings: Codable {
-    var default_language: String
-}
-
-struct LocalizeJSONContent: Codable {
-    let settings: LocalizeSettings
-    let strings: LocalizeSource
 }

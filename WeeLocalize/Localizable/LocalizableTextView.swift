@@ -19,6 +19,9 @@ open class LocalizableTextVIew: UITextView, Localizable {
     }
     
     func setString(fromIdentifier key: String, language: String? = nil) {
+        guard localizableIdentifier != "" else {
+            return
+        }
         self.text = WeeLocalizeManager.shared.getString(fromIdentifier: key, language: language)
     }
 }

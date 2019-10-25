@@ -58,11 +58,17 @@ class WeeLocalizeManager {
     
     func loadLocalizationFile(str: String) {
         guard let path = Bundle.main.url(forResource: str, withExtension: "json"),
-            let data = try? Data(contentsOf: path),
-            let jsonContent = try? JSONDecoder().decode(LocalizeJSONContent.self, from: data) else {
+            let data = try? Data(contentsOf: path) else {
                 return
         }
         
+        decodeLocalizationFile(data: data)
+    }
+    
+    public func decodeLocalizationFile(data: Data) {
+        guard let jsonContent = try? JSONDecoder().decode(LocalizeJSONContent.self, from: data) else {
+                return
+        }
         localizeSource = jsonContent.localize_strings
         localizeSettings = jsonContent.localize_settings
     }

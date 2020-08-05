@@ -1,0 +1,141 @@
+{
+    "localize_settings" : {
+        "default_language" : "en",
+        "available_languages": [
+            {
+                "key": "it",
+                "value": "Italiano"
+            },
+            {
+                "key": "en",
+                "value": "English"
+            }
+        ]
+    },
+    "localize_strings": {
+        "skip_button": {
+            "it" : "SALTA",
+            "en" : "SKIP"
+        },
+        "tutorial_title_0": {
+            "it" : "TRATTATI BENE",
+            "en" : "TRATTATI BENE (en)"
+        },
+        "tutorial_title_1": {
+            "it" : "SCOPRI DOVE SIAMO",
+            "en" : "SCOPRI DOVE SIAMO (en)"
+        },
+        "tutorial_title_2": {
+            "it" : "FATTI RICONOSCERE",
+            "en" : "FATTI RICONOSCERE (en)"
+        },
+        "tutorial_subtitle_0": {
+            "it" : "Tieni sotto controllo il tuo livello di idratazione",
+            "en" : "Tieni sotto controllo il tuo livello di idratazione (en)"
+        },
+        "tutorial_subtitle_1": {
+            "it" : "Trova sulla mappa i dispenser Acqua Alma più vicini a te",
+            "en" : "Trova sulla mappa i dispenser Acqua Alma più vicini a te (en)"
+        },
+        "tutorial_subtitle_2": {
+            "it" : "Autenticati al dispenser per un'esperienza personalizzata e per usufruire delle tue promozioni",
+            "en" : "Autenticati al dispenser per un'esperienza personalizzata e per usufruire delle tue promozioni (en)"
+        },
+        "login_title": {
+            "it" : "ACCEDI",
+            "en" : "LOGIN"
+        },
+        "email_subtitle": {
+            "it" : "E-mail",
+            "en" : "E-mail"
+        },
+        "email_placeholder": {
+            "it" : "Inserisci la tua email",
+            "en" : "Inserisci la tua email"
+        },
+        "password_subtitle": {
+            "it" : "Password",
+            "en" : "Password"
+        },
+        "password_placeholder": {
+            "it" : "Inserisci la tua password",
+            "en" : "Inserisci la tua password"
+        },
+        "remember_check": {
+            "it" : "Ricordami",
+            "en" : "Remember me"
+        },
+        "forgot_link": {
+            "it" : "Hai dimenticato la password?",
+            "en" : "Forgot your password?"
+        },
+        "login_button": {
+            "it" : "ACCEDI",
+            "en" : "LOGIN"
+        },
+        "login_social": {
+            "it" : "oppure accedi con",
+            "en" : "oppure accedi con"
+        },
+        "login_not_registered": {
+            "it" : "NON SEI REGISTRATO?",
+            "en" : "NON SEI REGISTRATO?"
+        },
+        "register_button": {
+            "it" : "REGISTRATI",
+            "en" : "SIGN UP"
+        },
+        "reset_password_title": {
+            "it" : "RECUPERA PASSWORD",
+            "en" : "RECOVER PASSWORD"
+        },
+        "reset_password_subtitle": {
+            "it" : "Inserisci l'indirizzo email associato al tuo account e ti invieremo il link per resettare la tua password.",
+            "en" : "Inserisci l'indirizzo email associato al tuo account e ti invieremo il link per resettare la tua password."
+        },
+        "send_button": {
+            "it" : "INVIA",
+            "en" : "SEND"
+        },
+        "new_account_title": {
+            "it" : "CREA UN ACCOUNT",
+            "en" : "CREA UN ACCOUNT"
+        },
+        "new_account_email_subtitle": {
+            "it" : "Inserisci il tuo indirizzo e-mail",
+            "en" : "Inserisci il tuo indirizzo e-mail"
+        },
+        "new_account_choose_password": {
+            "it" : "Scegli una password",
+            "en" : "Scegli una password"
+        },
+        "new_account_confirm_password": {
+            "it" : "Conferma password",
+            "en" : "Confirm password"
+        },
+        "privacy_policy": {
+            "it" : "Accetto la Privacy Policy",
+            "en" : "Accetto la Privacy Policy"
+        },
+        "term_conditions": {
+            "it" : "Accetto i Termini & Condizioni",
+            "en" : "Accetto i Termini & Condizioni"
+        },
+        "hello": {
+            "it" : "Ciao",
+            "en" : "Hello"
+        },
+        "home_subtitle": {
+            "it" : "sei al",
+            "en" : "sei al"
+        },
+        "home_second_subtitle": {
+            "it" : "del tuo",
+            "en" : "del tuo"
+        },
+        "daily_requirements": {
+            "it" : "FABBISOGNO GIORNALIERO",
+            "en" : "FABBISOGNO GIORNALIERO"
+        }
+    }
+}
